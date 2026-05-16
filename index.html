@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>NSSC 2026 | Cosmos Exordium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="video-bg">
+  <video autoplay muted loop playsinline id="bgVideo">
+    <source src="15562120-hd_1920_1080_24fps.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+</div>
+
+<nav class="glass-nav">
+  <div class="logo">🌌 NSSC '26</div>
+  <ul class="nav-links">
+    <li><a class="nav-link active" data-target="home">Home</a></li>
+    <li><a class="nav-link" data-target="schedule">Schedule</a></li>
+    <li><a class="nav-link" data-target="lectures">Lectures</a></li>
+    <li><a class="nav-link" data-target="gallery">Gallery</a></li>
+    <li><a class="nav-link" data-target="teams">Teams</a></li>
+    <li><a class="nav-link" data-target="contact">Contact</a></li>
+    <li><a class="nav-link" data-target="auth" id="navAuthLink">Login</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <section id="home" class="tab-content active">
+    <div class="hero">
+      <h1 class="main-title">NSSC 2026</h1>
+      <div class="theme-text">COSMOS EXORDIUM</div>
+      <p class="motto-text">The Cosmos Within, The Odyssey Ahead</p>
+      <div class="fake-button-frame">
+        <button id="launchBtn"><i class="fas fa-rocket"></i> Launch Experience</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="tab-content">
+    <h2 class="title">Event Timeline</h2>
+    <div class="schedule-wrap">
+      <div class="day-card glass">
+        <h3>🌙 Day 0 · Oct 27</h3>
+        <div class="item"><span>07:00 – 09:00</span><strong>Registration & Kit Distribution</strong><br><span class="venue">📍 Vikramshila Foyer</span></div>
+        <div class="item"><span>09:30 – 12:30</span><strong>ARES (Aerospace Robotic Event)</strong><br><span class="venue">📍 Vikramshila Foyer</span></div>
+        <div class="item"><span>12:30 – 13:30</span><strong>Lunch Break</strong><br><span class="venue">📍 Food Court</span></div>
+        <div class="item"><span>14:00 – 17:00</span><strong>Astrophotography Workshop</strong><br><span class="venue">📍 Vikramshila Foyer</span></div>
+        <div class="item highlight-lecture">
+          <span>18:30 – 20:00</span><strong>✨ Guest Lecture: Dr. N Sudheer Kumar</strong><br>
+          "Cryogenic Engines and Its Future"<br>
+          <span class="venue">📍 Kalidas Auditorium</span>
+        </div>
+        <div class="item"><span>20:30 – 22:30</span><strong>Star Gazing Night</strong><br><span class="venue">📍 Tata Steel Sports Complex Ground</span></div>
+      </div>
+      <div class="day-card glass">
+        <h3>☀️ Day 1 · Oct 28</h3>
+        <div class="item"><span>07:00 – 08:30</span><strong>Morning Yoga & Cosmic Meditation</strong><br><span class="venue">📍 Vikramshila Foyer</span></div>
+        <div class="item"><span>09:00 – 11:00</span><strong>CosmoMath</strong><br><span class="venue">📍 Vikramshila Foyer</span></div>
+        <div class="item"><span>09:00 – 12:00</span><strong>Case Study Competition</strong><br><span class="venue">📍 Vikramshila Foyer</span></div>
+        <div class="item"><span>11:30 – 13:30</span><strong>Data Analytics Challenge</strong><br><span class="venue">📍 Vikramshila Foyer</span></div>
+        <div class="item"><span>14:30 – 16:30</span><strong>Eggstravaganza</strong><br><span class="venue">📍 Vikramshila Foyer</span></div>
+        <div class="item"><span>16:30 – 18:00</span><strong>Lift‑Off (Model Rocketry)</strong><br><span class="venue">📍 MG Ground</span></div>
+        <div class="item highlight-lecture">
+          <span>18:30 – 20:00</span><strong>✨ Guest Lecture: Mr. Shubhanshu</strong><br>
+          "Extraterrestrial Mining"<br>
+          <span class="venue">📍 Netaji Auditorium</span>
+        </div>
+      </div>
+      <div class="day-card glass">
+        <h3>🌟 Day 2 · Oct 29</h3>
+        <div class="item"><span>07:00 – 09:00</span><strong>Space Yoga & Mindfulness</strong><br><span class="venue">📍 Vikramshila Foyer</span></div>
+        <div class="item"><span>09:30 – 12:00</span><strong>Maze Runner</strong><br><span class="venue">📍 Vikramshila Foyer</span></div>
+        <div class="item"><span>10:00 – 13:00</span><strong>Paper Presentation</strong><br><span class="venue">📍 Vikramshila Foyer</span></div>
+        <div class="item"><span>12:00 – 14:00</span><strong>Pitch the Cosmos</strong><br><span class="venue">📍 Vikramshila Foyer</span></div>
+        <div class="item"><span>15:00 – 16:30</span><strong>Space Art Competition</strong><br><span class="venue">📍 Vikramshila Foyer</span></div>
+        <div class="item"><span>15:00 – 16:30</span><strong>Space Quiz Finals</strong><br><span class="venue">📍 Vikramshila Foyer</span></div>
+        <div class="item highlight-lecture">
+          <span>15:00 – 16:30</span><strong>✨ Guest Lecture: Prof. Impey & Dr. Emma</strong><br>
+          "Advancements & The Space Craze"<br>
+          <span class="venue">📍 Kalidas Auditorium</span>
+        </div>
+        <div class="item highlight-closing">
+          <span>18:00 – 20:30</span><strong>🏆 Closing Ceremony & Awards Night</strong><br>
+          <span class="venue">📍 Netaji Auditorium</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lectures" class="tab-content">
+    <h2 class="title">Keynote Speakers</h2>
+    <div class="lecture-grid">
+      <div class="speaker-card glass">
+        <div class="speaker-image-slot">
+          <img src="https://media.licdn.com/dms/image/v2/D5603AQHIW52FSnv8ow/profile-displayphoto-scale_200_200/B56ZtFNzzHIAAc-/0/1766392808411?e=2147483647&v=beta&t=lw8zWQ_uxbdiIy2889eGlqC46LvAwwjiqJ99yVRz79I" alt="Dr. N Sudheer Kumar">
+        </div>
+        <div class="speaker-details">
+          <h3>Dr. N Sudheer Kumar</h3>
+          <span class="role">Ex-Chairman, ISRO</span>
+          <p class="topic">“Cryogenic Engines and Its Future”</p>
+          <div class="lecture-meta">
+            <span><i class="far fa-calendar-alt"></i> Day 0 · Oct 27 | 18:30 – 20:00</span>
+            <span><i class="fas fa-map-marker-alt"></i> Kalidas Auditorium</span>
+          </div>
+          <p class="teaser">Dr. Sudheer Kumar, former Chairman of ISRO's Launch Vehicle Programme, unveils the science behind India's most powerful cryogenic engines. He will discuss how these engines enable deep-space missions like Chandrayaan and Gaganyaan, and what the next generation of propulsion holds for interplanetary travel.</p>
+          <div class="speaker-bio"><i class="fas fa-microphone-alt"></i> Padma Shri awardee, led the development of C25 cryogenic stage for GSLV MkIII.</div>
+        </div>
+      </div>
+      <div class="speaker-card glass">
+        <div class="speaker-image-slot">
+          <img src="https://cdn.britannica.com/68/262468-050-0B10B29C/Shubhanshu-Shukla-Indian-astronaut-Axiom-Mission-4-ISRO.jpg" alt="Mr. Shubhanshu">
+        </div>
+        <div class="speaker-details">
+          <h3>Mr. Shubhanshu</h3>
+          <span class="role">Crew Captain, Gaganyaan</span>
+          <p class="topic">“Extraterrestrial Mining”</p>
+          <div class="lecture-meta">
+            <span><i class="far fa-calendar-alt"></i> Day 1 · Oct 28 | 18:30 – 20:00</span>
+            <span><i class="fas fa-map-marker-alt"></i> Netaji Auditorium</span>
+          </div>
+          <p class="teaser">As a key astronaut candidate for India's first crewed space mission, Mr. Shubhanshu brings a unique perspective on space resource utilization. He will explore the technologies required to mine asteroids and the Moon – from robotic excavators to in‑situ fuel production – and how this will fuel a sustainable space economy.</p>
+          <div class="speaker-bio"><i class="fas fa-microphone-alt"></i> Wing Commander, IAF; selected for Gaganyaan mission; specialist in extravehicular activity.</div>
+        </div>
+      </div>
+      <div class="speaker-card glass">
+        <div class="speaker-image-slot">
+          <div class="double-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYd9TVZRe6mEKDZ4oothV7TiNboGq6eHis0Q&s" alt="Prof. Impey">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqfmhexgONQBKwPyR42sH32stqWYVMFYl-7w&s" alt="Dr. Emma">
+          </div>
+        </div>
+        <div class="speaker-details">
+          <h3>Prof. Impey & Dr. Emma</h3>
+          <span class="role">NASA & Academia</span>
+          <p class="topic">“Advancements & The Space Craze”</p>
+          <div class="lecture-meta">
+            <span><i class="far fa-calendar-alt"></i> Day 2 · Oct 29 | 15:00 – 16:30</span>
+            <span><i class="fas fa-map-marker-alt"></i> Kalidas Auditorium</span>
+          </div>
+          <p class="teaser">Prof. Impey (University of Arizona) and Dr. Emma (NASA JPL) join forces to discuss the explosion of public interest in space – from SpaceX starships to Artemis lunar missions. They analyze how social media, private enterprise, and new discoveries are fueling a second Space Age, and what it means for future scientists and engineers.</p>
+          <div class="speaker-bio"><i class="fas fa-microphone-alt"></i> Prof. Impey: award-winning astronomy educator. Dr. Emma: lead systems engineer for Mars Sample Return.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="tab-content">
+    <h2 class="title">Past Memories</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item glass">
+        <img src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=500&q=80" alt="Launch">
+        <div class="gallery-info"><h4>🚀 Rocket Launch challenge</h4></div>
+      </div>
+      <div class="gallery-item glass">
+        <img src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?auto=format&fit=crop&w=500&q=80" alt="Nebula">
+        <div class="gallery-info"><h4>🌌 Astrophotography Keynotes</h4></div>
+      </div>
+      <div class="gallery-item glass">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=500&q=80" alt="Observatory">
+        <div class="gallery-info"><h4>🔭 Stargazing Night Assemblies</h4></div>
+      </div>
+      <div class="gallery-item glass">
+        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=500&q=80" alt="Rover">
+        <div class="gallery-info"><h4>🛸 Next-Gen Rover Challenge</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="teams" class="tab-content">
+    <h2 class="title">Organizing Team</h2>
+    <div class="team-grid">
+      <div class="member glass">
+        <div class="member-avatar"><i class="fas fa-user-astronaut"></i></div>
+        <h4>Anaya Dixit</h4>
+        <div class="team-role">Governor</div>
+        <div class="member-socials">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="member glass">
+        <div class="member-avatar"><i class="fas fa-user-shield"></i></div>
+        <h4>Vedant Malsure</h4>
+        <div class="team-role">Governor</div>
+        <div class="member-socials">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="tab-content">
+    <h2 class="title">Establish Subspace Link</h2>
+    <div class="contact-container">
+      <div class="neon-form-box glass">
+        <h2>Contact Mission Control</h2>
+        <div class="input-group">
+          <div class="field-wrap">
+            <label for="contactName">ID Name</label>
+            <input type="text" id="contactName" placeholder="Enter identification name">
+          </div>
+          <div class="field-wrap">
+            <label for="contactEmail">Signal Frequency (Email)</label>
+            <input type="email" id="contactEmail" placeholder="username@domain.com">
+          </div>
+          <div class="field-wrap">
+            <label for="contactMsg">Log Entry</label>
+            <textarea id="contactMsg" placeholder="Transmit your data packets..."></textarea>
+          </div>
+        </div>
+        <div class="fake-broadcast-frame">
+          <button id="sendMsgBtn">Broadcast Signal</button>
+        </div>
+      </div>
+
+      <div class="info-panel">
+        <div class="info-card glass">
+          <i class="fas fa-satellite"></i>
+          <h4>Primary Frequency</h4>
+          <p style="color: #aaa; font-size: 0.9rem;">hello@nssc.space</p>
+        </div>
+        <div class="info-card glass">
+          <i class="fas fa-map-marker-alt"></i>
+          <h4>Coordinates</h4>
+          <p style="color: #aaa; font-size: 0.9rem;">IIT Kharagpur, West Bengal, 721302</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="auth" class="tab-content">
+    <div class="auth-container">
+      <div id="loginFormPanel" class="neon-form-box glass">
+        <h2>Station Login</h2>
+        <div class="input-group">
+          <div class="field-wrap">
+            <label for="loginUser">Operator Username</label>
+            <input type="text" id="loginUser" placeholder="Enter structural callsign">
+          </div>
+          <div class="field-wrap">
+            <label for="loginPass">Access Code</label>
+            <input type="password" id="loginPass" placeholder="••••••••">
+          </div>
+        </div>
+        <div class="fake-login-frame">
+          <button id="loginBtn">Initialize Link</button>
+        </div>
+      </div>
+
+      <div id="dashboardPanel" class="profile-dashboard glass">
+        <div class="profile-header">
+          <div class="user-avatar"><i class="fas fa-id-badge"></i></div>
+          <div class="profile-details">
+            <h3 id="profileNameDisplay">Cadet Profile</h3>
+            <p style="color: var(--neon-blue); font-size: 0.85rem; font-weight: bold; text-transform: uppercase;">Clearance: Operator Level 1</p>
+          </div>
+        </div>
+        <p style="color: #ccc; margin-bottom: 1.5rem;">Telemetry modules and personalized code assignments are synchronized. Your active sub-session state is tracked securely locally.</p>
+        <button class="clear-btn" id="logoutBtn">Terminated Connection</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
